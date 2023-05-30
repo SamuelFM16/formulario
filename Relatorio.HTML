@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <h1>Formulário EBAC</h1>
+    <form>
+        <label for="Nome">Nome</label>
+        <input id="Nome" type="Nome"/> <br><br>
+        <label for="Email">Email</label>
+        <input id="Email"/> <br> <br>
+        <label for="Senha">Senha</label>
+        <input type="password" id="Senha">
+        <input type="checkbox" onclick="Mostrar0ocultarsenha()">Mostrar Senha
+        <br><br>
+        <button>Cadastrar</button>
+        <br><br>
+        <label for="email"></label>
+    </form>
+    <script>
+        function Mostrar0ocultarsenha(){
+            var Senha=document.getElementById("Senha");
+            if(Senha.type=="password"){
+                Senha.type="text";
+            }else{
+                Senha.type="password"
+            }
+        }
+    </script>
+</body>
+</html>
